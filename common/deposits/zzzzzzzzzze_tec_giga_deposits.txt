@@ -272,9 +272,9 @@ d_giga_job_size = {
 		planet_miners_minerals_produces_add = 4
 		planet_farmers_food_produces_add = 6
 
-		planet_researchers_physics_research_produces_add = 4
-		planet_researchers_society_research_produces_add = 4
-		planet_researchers_engineering_research_produces_add = 4
+		planet_researchers_physics_research_produces_add = 3
+		planet_researchers_society_research_produces_add = 3
+		planet_researchers_engineering_research_produces_add = 3
 
 		planet_chemists_volatile_motes_produces_add = 2
 		planet_chemists_minerals_upkeep_add = 10
@@ -302,8 +302,8 @@ d_giga_job_size = {
 
 		planet_researchers_consumer_goods_upkeep_add = 2
 
-		planet_priests_unity_produces_add = 4
-		planet_priests_consumer_goods_upkeep_add = 2
+		# planet_priests_unity_produces_add = 4
+		# planet_priests_consumer_goods_upkeep_add = 2
 		planet_administrators_unity_produces_add = 4
 		planet_administrators_consumer_goods_upkeep_add = 2
 		planet_managers_unity_produces_add = 4
@@ -463,6 +463,29 @@ d_giga_job_size = {
 
 		planet_bio_trophies_unity_produces_add = 2
 		planet_bio_trophies_consumer_goods_upkeep_add = 1
+	}
+
+	#Research boost building
+	triggered_planet_modifier = {
+		potential = { has_building = building_tec_regular_research_booster_1 }
+		multiplier = modifier:giga_planet_job_size
+
+		planet_researchers_physics_research_produces_add = 0.5
+		planet_researchers_society_research_produces_add = 0.5
+		planet_researchers_engineering_research_produces_add = 0.5
+
+		planet_researchers_energy_upkeep_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = { has_building = building_tec_regular_research_booster_2 }
+		multiplier = modifier:giga_planet_job_size
+
+		planet_researchers_physics_research_produces_add = 1
+		planet_researchers_society_research_produces_add = 1
+		planet_researchers_engineering_research_produces_add = 1
+
+		planet_researchers_energy_upkeep_add = 2
 	}
 
 	# catalytic
