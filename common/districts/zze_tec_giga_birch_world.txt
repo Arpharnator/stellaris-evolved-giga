@@ -600,7 +600,7 @@ district_giga_birch_ktisma = {
 				always = yes
 			"
 			cost = @giga_birch_insula_cost
-			upkeep = @giga_birch_insula_cost
+			upkeep = @giga_birch_insula_maintenance
 		}
 		cost = {
 			alloys = @giga_birch_insula_cost 
