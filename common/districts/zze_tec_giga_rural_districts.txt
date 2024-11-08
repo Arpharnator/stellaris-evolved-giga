@@ -61,7 +61,13 @@ district_giga_planet_generator = {
 		}
 	}
 
-	inline_script = districts/type/tec_rural_generator
+	inline_script = {
+		script = districts/type/tec_rural_generator
+		default_job = technician
+		default_job_secondary = no
+		jobs_base = 2
+		housing_base = 2
+	}
 }
 
 ###########################################################################################################################################
@@ -123,7 +129,13 @@ district_giga_planet_mining = {
 		}
 	}
 
-	inline_script = districts/type/tec_rural_mining
+	inline_script = {
+		script = districts/type/tec_rural_mining
+		default_job = miner
+		default_job_secondary = no
+		jobs_base = 2
+		housing_base = 2
+	}
 }
 
 ###########################################################################################################################################
@@ -196,7 +208,13 @@ district_giga_planet_farming = {
 		}
 	}
 
-	inline_script = districts/type/tec_rural_farming
+	inline_script = {
+		script = districts/type/tec_rural_farming
+		default_job = farmer
+		default_job_secondary = no
+		jobs_base = 2
+		housing_base = 2
+	}
 }
 
 ###########################################################################################################################################

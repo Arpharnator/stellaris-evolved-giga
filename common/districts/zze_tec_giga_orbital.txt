@@ -45,7 +45,13 @@ district_giga_orbital_farming = {
 		}
 	}
 
-	inline_script = districts/type/tec_rural_farming
+	inline_script = {
+		script = districts/type/tec_rural_farming
+		default_job = farmer
+		default_job_secondary = no
+		jobs_base = 2
+		housing_base = 2
+	}
 
 }
 
