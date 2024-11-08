@@ -951,7 +951,14 @@ district_giga_frameworld_generator = {
 			upkeep = @base_upkeep
 		}
 	}
-	inline_script = districts/type/tec_rural_generator
+
+	inline_script = {
+		script = districts/type/tec_rural_generator
+		default_job = technician
+		default_job_secondary = no
+		jobs_base = 2
+		housing_base = 2
+	}
 }
 
 ###############################################################################################################
@@ -994,29 +1001,12 @@ district_giga_frameworld_penrose = {
 			alloys = @mega_alloy_upkeep
 		}
 	}
-	inline_script = districts/type/tec_rural_generator
-
 	inline_script = {
-		script = jobs/tec_technician
-		regular_count = 6
-		regular_secondary_count = 3
-		hive_count = 9
-		hive_secondary_count = 6
-		machine_count = 6
-		machine_secondary_count = 3
-		mult = 1
-		display = no_desc
-		trigger = ""
-	}
-
-	inline_script = {
-		script = jobs/tec_technician_secondary
-		regular_count = 3
-		hive_count = 3
-		machine_count = 3
-		mult = 1
-		display = no_desc
-		trigger = ""
+		script = districts/type/tec_rural_generator
+		default_job = technician
+		default_job_secondary = no
+		jobs_base = 6
+		housing_base = 2
 	}
 
 	ai_resource_production = {
@@ -1065,7 +1055,13 @@ district_giga_frameworld_mining = {
 		}
 	}
 
-	inline_script = districts/type/tec_rural_mining
+	inline_script = {
+		script = districts/type/tec_rural_mining
+		default_job = miner
+		default_job_secondary = no
+		jobs_base = 2
+		housing_base = 2
+	}
 }
 
 ###############################################################################################################
@@ -1107,29 +1103,12 @@ district_giga_frameworld_decompressor = {
 
 	}
 
-	inline_script = districts/type/tec_rural_mining
-
 	inline_script = {
-		script = jobs/tec_miner
-		regular_count = 6
-		regular_secondary_count = 3
-		hive_count = 9
-		hive_secondary_count = 6
-		machine_count = 6
-		machine_secondary_count = 3
-		mult = 1
-		display = no_desc
-		trigger = ""
-	}
-
-	inline_script = {
-		script = jobs/tec_miner_secondary
-		regular_count = 3
-		hive_count = 3
-		machine_count = 3
-		mult = 1
-		display = no_desc
-		trigger = ""
+		script = districts/type/tec_rural_mining
+		default_job = miner
+		default_job_secondary = no
+		jobs_base = 6
+		housing_base = 2
 	}
 
 	ai_resource_production = {
@@ -1177,7 +1156,13 @@ district_giga_frameworld_farming = {
 		}
 	}
 
-	inline_script = districts/type/tec_rural_farming
+	inline_script = {
+		script = districts/type/tec_rural_farming
+		default_job = farmer
+		default_job_secondary = no
+		jobs_base = 2
+		housing_base = 2
+	}
 }
 
 ###############################################################################################################
